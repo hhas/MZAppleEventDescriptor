@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		4F4362902232A767006E5BD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F43628F2232A767006E5BD8 /* main.m */; };
+		4F4362982232A793006E5BD8 /* MZAppleEventDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4362972232A793006E5BD8 /* MZAppleEventDescriptor.m */; };
+		4F43629B2232AA23006E5BD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F43629A2232AA23006E5BD8 /* Foundation.framework */; };
+		4F43629D2232AA2A006E5BD8 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F43629C2232AA2A006E5BD8 /* CoreServices.framework */; };
+		4F44D6BE223EB131000745BC /* MZAppleEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D6BD223EB131000745BC /* MZAppleEventManager.m */; };
+		4F44D6C2223F8523000745BC /* MZAppleEventConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D6C0223F8523000745BC /* MZAppleEventConverter.m */; };
+		4F44D6C5223F86E6000745BC /* MZFourCharCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F44D6C4223F86E6000745BC /* MZFourCharCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,16 @@
 /* Begin PBXFileReference section */
 		4F43628C2232A767006E5BD8 /* MZAppleEventDescriptor */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MZAppleEventDescriptor; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F43628F2232A767006E5BD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F4362962232A793006E5BD8 /* MZAppleEventDescriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZAppleEventDescriptor.h; sourceTree = "<group>"; };
+		4F4362972232A793006E5BD8 /* MZAppleEventDescriptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZAppleEventDescriptor.m; sourceTree = "<group>"; };
+		4F43629A2232AA23006E5BD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4F43629C2232AA2A006E5BD8 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		4F44D6BC223EB131000745BC /* MZAppleEventManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZAppleEventManager.h; sourceTree = "<group>"; };
+		4F44D6BD223EB131000745BC /* MZAppleEventManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZAppleEventManager.m; sourceTree = "<group>"; };
+		4F44D6C0223F8523000745BC /* MZAppleEventConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZAppleEventConverter.m; sourceTree = "<group>"; };
+		4F44D6C1223F8523000745BC /* MZAppleEventConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZAppleEventConverter.h; sourceTree = "<group>"; };
+		4F44D6C3223F86E6000745BC /* MZFourCharCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZFourCharCode.h; sourceTree = "<group>"; };
+		4F44D6C4223F86E6000745BC /* MZFourCharCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZFourCharCode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F43629D2232AA2A006E5BD8 /* CoreServices.framework in Frameworks */,
+				4F43629B2232AA23006E5BD8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +61,7 @@
 			children = (
 				4F43628E2232A767006E5BD8 /* MZAppleEventDescriptor */,
 				4F43628D2232A767006E5BD8 /* Products */,
+				4F4362992232AA23006E5BD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +77,25 @@
 			isa = PBXGroup;
 			children = (
 				4F43628F2232A767006E5BD8 /* main.m */,
+				4F4362962232A793006E5BD8 /* MZAppleEventDescriptor.h */,
+				4F4362972232A793006E5BD8 /* MZAppleEventDescriptor.m */,
+				4F44D6BC223EB131000745BC /* MZAppleEventManager.h */,
+				4F44D6BD223EB131000745BC /* MZAppleEventManager.m */,
+				4F44D6C1223F8523000745BC /* MZAppleEventConverter.h */,
+				4F44D6C0223F8523000745BC /* MZAppleEventConverter.m */,
+				4F44D6C3223F86E6000745BC /* MZFourCharCode.h */,
+				4F44D6C4223F86E6000745BC /* MZFourCharCode.m */,
 			);
 			path = MZAppleEventDescriptor;
+			sourceTree = "<group>";
+		};
+		4F4362992232AA23006E5BD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F43629C2232AA2A006E5BD8 /* CoreServices.framework */,
+				4F43629A2232AA23006E5BD8 /* Foundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4362902232A767006E5BD8 /* main.m in Sources */,
+				4F44D6C5223F86E6000745BC /* MZFourCharCode.m in Sources */,
+				4F44D6BE223EB131000745BC /* MZAppleEventManager.m in Sources */,
+				4F44D6C2223F8523000745BC /* MZAppleEventConverter.m in Sources */,
+				4F4362982232A793006E5BD8 /* MZAppleEventDescriptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
